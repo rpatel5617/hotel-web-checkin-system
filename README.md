@@ -82,5 +82,17 @@ All changes are instantly reflected in the database and the guest sees the updat
 | **Other Tools** | Mongoose ODM, JSON Web Tokens (JWT), Nodemailer, Crypto for encryption |
 
 ---
+🚀 Future Expansion
 
+After implementation, the Extend Stay module can evolve to support:
+
+Selecting multiple extra nights
+
+Dynamic pricing rules (weekend vs weekday rates)
+
+Promotions and discount codes for extensions
+
+Automated email confirmation for the updated reservation
+
+Multi-room / group reservations
 
