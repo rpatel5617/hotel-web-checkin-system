@@ -45,13 +45,31 @@ The platform aims to reduce manual workload, prevent data entry errors, and enha
 
 ---
 
-### 🕓 Upcoming Feature: Extend Stay Functionality
-The next phase of development will introduce an **Extend Stay** option.  
-- Guests can enter their **confirmation number** or **room number** on the check-out day to request an extension.  
-- The system will automatically verify availability, update the **check-out date**, and recalculate total charges, including applicable pet fees.  
-- This enhancement aims to make the system more flexible and guest-centric.
+🕓 Extend Stay Functionality
 
----
+The Extend Stay feature allows guests to add additional nights to their reservation directly through the web application without visiting the front desk. The system verifies availability, updates the reservation, recalculates totals, and prevents overbooking — all automatically.
+
+🔐 How Guests Extend Their Stay
+
+To request an extension, the guest simply enters their confirmation number on the Extend Stay page.
+
+The system then:
+
+Fetches the reservation from MongoDB
+
+Verifies eligibility (guest must be currently checked in)
+
+Checks room availability for the new requested check-out date
+
+Updates the reservation if rooms are available
+
+Recalculates the total, including:
+
+Base nightly room rate
+
+Additional pet fees ($35 per pet per night, if applicable)
+
+All changes are instantly reflected in the database and the guest sees the updated booking summary.
 
 ## 🧩 Tech Stack
 
