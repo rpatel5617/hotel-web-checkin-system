@@ -1,98 +1,70 @@
-# 🏨 Hotel Web Check-in System (Master’s Project – Ongoing)
+# Getting Started with Create React App
 
-**Technologies:** React.js, Node.js, Express.js, MongoDB  
-**Platform:** Visual Studio Code  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 🧠 Overview
-The **Hotel Web Check-in System** is a full-stack web application designed to automate hotel guest operations such as check-in, room assignment, guest data management, and check-out processing.  
+In the project directory, you can run:
 
-Built with a **React.js frontend**, **Node.js + Express.js backend**, and **MongoDB** database, the system provides a seamless and secure experience for both guests and managers.  
+### `npm start`
 
-The platform aims to reduce manual workload, prevent data entry errors, and enhance overall guest experience by enabling digital check-ins, automated billing, and structured record management.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## ⚙️ Functional Workflow
+### `npm test`
 
-### 🧾 Guest Check-In Process
-1. The guest begins by entering their **confirmation number** and **first name**.  
-2. The system fetches all corresponding reservation details from the **MongoDB Compass database**.  
-3. The guest then specifies whether they have a **pet**.  
-   - If a pet is selected, a **pet fee of $35 per night per pet** is automatically added to the total.  
-4. The guest selects the **card type**, enters the **card number** and **expiration date**, and the information is securely stored in the database using encrypted storage and masked display.  
-5. Upon clicking **Check-In**, the system:
-   - Assigns a **room number**  
-   - Generates a **PIN code** for door access  
-   - Displays **pool timings**, **breakfast hours**, and **room location** instructions  
-6. If a guest who has already checked in enters the same details again, the system displays their existing check-in information (room number, PIN, and all instructions) without reprocessing payment or duplication.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-### 🧑‍💼 Manager Dashboard
-- Accessible only through manager credentials.  
-- Displays all **checked-in guest records**, including room assignments, guest names, confirmation numbers, and pet details.  
-- Helps management monitor occupancy, check-in activity, and guest details in real time.  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### 🏁 Guest Check-Out Process
-1. The guest enters either their **room number** or **confirmation number**.  
-2. The system verifies if the guest is eligible for check-out.  
-3. If valid, it displays the **guest name**, **room number**, and **total charges**.  
-4. The system then prompts for an **email address**, and upon confirmation, automatically sends a **receipt** of the stay to the guest’s email.  
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-🕓 Extend Stay Functionality
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-The Extend Stay feature allows guests to add additional nights to their reservation directly through the web application without visiting the front desk. The system verifies availability, updates the reservation, recalculates totals, and prevents overbooking — all automatically.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-🔐 How Guests Extend Their Stay
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-To request an extension, the guest simply enters their confirmation number on the Extend Stay page.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-The system then:
+## Learn More
 
-Fetches the reservation from MongoDB
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Verifies eligibility (guest must be currently checked in)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Checks room availability for the new requested check-out date
+### Code Splitting
 
-Updates the reservation if rooms are available
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Recalculates the total, including:
+### Analyzing the Bundle Size
 
-Base nightly room rate
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Additional pet fees ($35 per pet per night, if applicable)
+### Making a Progressive Web App
 
-All changes are instantly reflected in the database and the guest sees the updated booking summary.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## 🧩 Tech Stack
+### Advanced Configuration
 
-| Layer | Technology |
-|--------|-------------|
-| **Frontend** | React.js |
-| **Backend** | Node.js with Express.js |
-| **Database** | MongoDB Atlas / MongoDB Compass |
-| **Platform / IDE** | Visual Studio Code |
-| **Other Tools** | Mongoose ODM, JSON Web Tokens (JWT), Nodemailer, Crypto for encryption |
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
----
-🚀 Future Expansion
+### Deployment
 
-After implementation, the Extend Stay module can evolve to support:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Selecting multiple extra nights
+### `npm run build` fails to minify
 
-Dynamic pricing rules (weekend vs weekday rates)
-
-Promotions and discount codes for extensions
-
-Automated email confirmation for the updated reservation
-
-Multi-room / group reservations
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

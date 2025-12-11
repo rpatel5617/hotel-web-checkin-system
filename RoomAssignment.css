@@ -1,0 +1,41 @@
+.room-assignment {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e9f7e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1500fe;
+  }
+
+  h2 {
+    color: #388E3C;
+  }
+  
+
+  .Back-button {
+    margin-top: 50px; /* Adjust spacing as needed */
+  }
+  
