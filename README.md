@@ -179,11 +179,4 @@ Each collection is indexed to ensure fast lookups and prevent duplicate or confl
 - MongoDB Atlas connection
 - Git
 
-### Installation
 
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-npm install
-cd client
-npm install
